@@ -16,7 +16,7 @@ Dead Project Snipper offers an automated agent that
 
 # System Architecture
 
-![Dead Project Snipper.png](https://i.ibb.co/t4HMKjt/Dead-Project-Snipper.png)
+![ICP Grant Tracker](https://github.com/isroin2is/icp-grant-tracker/blob/main/ICP%20Grant%20Tracker.png?raw=true)
 
 ### System Flow
 
@@ -28,7 +28,7 @@ The project consist of three main flows, which is coded alphabetically.
 
 ### Details
 
-* Data point / Collector: Github / X Api collecter, Near indexing
+* Data point / Collector: Github / X Api collecter, ICP onchain data indexing
 * Data Sets for the Metrics: Web3 Grant Funding DB (most likely to be Gitcoin but need discussion)
 * Score Calculator: Multipath reasoning algorithm that utilizes LLM-as-a-judge
 * Report: Instruction based prompt engineering with RAG on Langchain
@@ -39,42 +39,3 @@ The project consist of three main flows, which is coded alphabetically.
 * Historical Grant Assessment: Check and see whether previous grant projects are still in progress or not
 * Grant Project Management: Check the current grant projects to see if their activity should be eligible for the amount
 * Grant Criteria Setup: Set up metrics for the least / preferred required activities for the grant recipient
-
-# Roadmap
-
-### Scope
-
-* Phase 1 - Quick Start
-    * Objective: Build a testable framework based on minimal data
-    * Based on a small set of projects / data set for testing purposes
-    * No Web/App UI integration. Only testable results shown on codelab
-* Phase 2 - MVP
-    * Objective: More dataset / product level UI to start the service adoption
-    * Larger dataset for comparison / score calculation
-    * Web based UI for datapoint / reporting. Any project can be registered
-    * Product ready level for the grant project(ex. Gitcoin, Potlock) integration
-* Phase 3 - Expansion
-    * Objective: Develop into a project assessment agent
-    * In theory, Dead Project Snipper can be generally applied as a project assessment that can not only be applied to Grant Projects outside of Web3, but also any project that requires performance metrics (ex. investment, employment, etc)
-    * In order for expansion, it will require multiple data points for the assessment and more developed scoring metrics that befits the purpose of the area of application
-
-# Team
-
-* [Hankeol Jeong/ Bigtide](https://github.com/HangryDev?tab=repositories): The team leader * Led multiple projects including [zkML project](https://devfolio.co/projects/leodevika-b20e) in Aleo * [agent based dev airdrop verifier](https://devfolio.co/projects/gajami-f679) project in. 
-* [Sokihoon](https://www.notion.so/1de0b8bdb0754a3d9d1f6e346b878b59?pvs=21):
-* AI engineer with R&D and project experiences including image deep learning platform for premium fabric performance prediction, AI based CAD design optimization for shipbuilding, and no code machine learning platform development
-* [Ludium](https://docs.google.com/presentation/d/15mmCJ2OYudZY1ncR8kX_eJsq8x8QaTjuOs80ep_TmwE/edit?usp=sharing): Ludium is Web3 builder community with 1,800 + active contributors. It provides opportunities for builders ranging from education, hackathon, to open source contribution based works.
-
-# Questions / Support / Request
-
-* Caveat: For the quick start, SMEs will be seeing Colab UI with “Dead” or “Alive” shown. No Web/App UI for the changes. It is possible to change metrics for the testing purposes
-* Project List: The initial project with their data point that would like to be assessed (ex. Potlock grant project that needs assessment)
-* Database Collection: Preferred database (ex. All Potlock grant project lists with data point / Gitcoin Grant Project DB)
-* Onchain Indexer: Would like to receive recommendation for storing the report onchain / indexer to retrieve project / report information
-* Actions after scoring: Is there an existing contract or code? Are there people doing this manually? If so, are there a set process? If there is a code, we could integrate it in the earlier version, making it much cooler
-    * Adjust staking allocations or token streaming rates for the project.
-        * Update project status in relevant databases or dashboards.
-        * Generate alerts for stakeholders or community members.
-        * Initiate a review process for projects falling below critical thresholds.
-* Service usage : using paid services: cloud provider (aws), openai api, github api, and X apis. Make sure this is not a problem.
-* Heads up: collecting and cleaning data might take some money as well. This tends to be underestimated
